@@ -50,7 +50,7 @@
 
 #dictionary
 #d={"name":"isha",1:7,"marks":67,True:1,4.5:"yes"}
-d={"name":"isha","y":6,1:7}
+# d={"name":"isha","y":6,1:7}
 # print(d.keys()) #-> for printing keys in dictionary
 # print(d.values()) #-> for printing values in dictionary
 # print(d["name"]) #-> for printing value of a key in dictionary
@@ -60,12 +60,59 @@ d={"name":"isha","y":6,1:7}
 # print(d.get("marks","not a key"))  #using get function to avoid error (code phatna) using a statement
 # print(d.get("marks"))  #using get function to avoid error (code phatna) without using a statement
 
-d["marks"]=95 #adding an element in dictionary
-d["name"]="tanu" #updating a dictionry value 
+# d["marks"]=95 #adding an element in dictionary
+# d["name"]="tanu" #updating a dictionry value 
 
 #we cannot update a key we can only update a value out of the key-value pairs in a dictionary
-print(d) #printing dictionary
-del d["marks"] #deleting a key from dictionary
-print(d)
-del d #deleting full dictionary 
-print(d) #NameError 
+# print(d) #printing dictionary
+# del d["marks"] #deleting a key from dictionary
+# print(d)
+# del d #deleting full dictionary 
+# print(d) #NameError 
+
+
+
+
+
+#empty set and dictionary difference
+# d={}   #it is dictionary-> empty
+# print(type(d))
+
+# s=set() #it is set-> empty
+# print(type(s))
+
+# s={56,7,3}
+# print(s)
+# print(s[0])
+
+#duplicay
+s={1,2,3,2}
+print(s)
+
+#mutability -> yes
+s.add(8)
+print(s)
+
+
+#s[0]=9
+
+s.remove(2)
+
+print(s)
+s.discard(8)
+print(s)
+# s.remove(5)
+s.discard(5)
+print(s)
+
+print(3 in s) #hashing 
+
+#union ->{}
+#intersection-> {}
+#difference ->{}
+a={2,3,4}
+b={1,2,6}
+print(a.union(b)) #{1,2,3,4,6}
+print(a.intersection(b)) #{2}
+print(a.difference(b)) #{3,4}
+print(b.difference(a)) #{1,6}
