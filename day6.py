@@ -37,7 +37,7 @@ print(l[::-1])
 print(t[::-1])
 print(s[::-1])
 
-print(s[9::-2]) 
+print(s[9::-2]) #ie hi
 """
 NOTE:
     #start->inclusive

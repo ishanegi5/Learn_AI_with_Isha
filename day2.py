@@ -7,3 +7,7 @@ age=int(input("enter age: ")) #5.0
 # print(type(age))
 # print(age+5) #5.0+5=10.0
 print(type(age))
+ 
+#Literal values
+a=5
+name="Isha"
